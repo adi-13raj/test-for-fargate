@@ -23,5 +23,3 @@ phases:
       - echo Pushing the Docker images...
       - docker push adi13raj/ecs-fargate-test:latest
       
-artifacts:
-    files: imagedefinitions.json
