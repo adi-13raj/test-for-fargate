@@ -9,6 +9,8 @@ phases:
       - echo Logging in to docker.io...
       - echo $USERNAME
       - echo $PASSWORD
+      - docker login -u $USERNAME -p $PASSWORD
+      
       
   build:
     commands:
