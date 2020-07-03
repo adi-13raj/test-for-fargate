@@ -6,13 +6,10 @@ phases:
       docker: 18
   pre_build:
     commands:
-      - echo Logging in to Amazon ECR...
-      - aws --version
-      - AWS_ID=$(aws sts get-caller-identity --query Account --output text)
-      - REGION=$AWS_DEFAULT_REGION
-      - echo $AWS_DEFAULT_REGION
-      - $(aws ecr get-login --region $REGION --no-include-email)
-      - REPOSITORY_URI=$AWS_ID.dkr.ecr.$REGION.amazonaws.com/devopsaws-demo-harshit
+      - echo Logging in to docker.io...
+      - echo $USERNAME
+      - echo $PASSWORD
+      
   build:
     commands:
       - echo Building the Docker image...
