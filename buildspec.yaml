@@ -21,7 +21,7 @@ phases:
     commands:
       - echo Build completed on `date`
       - echo Pushing the Docker images...
-      - docker push $REPOSITORY_URI:latest
+      - docker push adi13raj/ecs-fargate-test:latest
       
 artifacts:
     files: imagedefinitions.json
