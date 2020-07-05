@@ -22,6 +22,6 @@ phases:
       - echo Build completed on `date`
       - echo Pushing the Docker images...
       - docker push adi13raj/ecs-fargate-test:latest
-      - aws ecs update-service --cluster fargate-demo-aditya-cluster --service fargate-demo-service --force-new-deployment
+      - aws ecs update-service --cluster fargate-demo-aditya-cluster --service demo --force-new-deployment
 
       
