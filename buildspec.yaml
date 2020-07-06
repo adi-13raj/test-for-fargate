@@ -24,4 +24,4 @@ phases:
       - docker push adi13raj/ecs-fargate-test:latest
       - aws ecs update-service --cluster fargate-demo-aditya-cluster --service demo --force-new-deployment
       - aws ecs update-service --cluster fargate-demo-aditya-cluster --service demo --desired-count 0
-      - aws ecs update-service --cluster fargate-demo-aditya-cluster --service demo --desired-count 0
+      - aws ecs update-service --cluster fargate-demo-aditya-cluster --service demo --desired-count 1
